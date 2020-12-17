@@ -51,11 +51,13 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    .fade-enter-active, .fade-leave-active {
-        transition: opacity 0.25s ease-out;
-    }
-    .fade-enter, .fade-leave-to {
-        opacity: 0;
+    @keyframes fade {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 
 </style>
