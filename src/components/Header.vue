@@ -1,7 +1,9 @@
 <template>
     <div class="container">
-        <slot><img :src="image" alt="header"></slot>
-            <div class="centered w3-border w3-display-center w3-text-white w3-padding-16" style="background-color:black">The place to be for your Vinyl</div>
+        <transition>
+            <img :src="image[index].src" alt="header">
+        </transition>
+        <div class="centered w3-border w3-display-center w3-text-white w3-padding-16" style="background-color:black">The place to be for your Vinyl</div>
     </div>
 </template>
 
@@ -10,8 +12,26 @@
         name: 'Header',
         data() {
             return {
-                image:"/assets/musique_header.jpg"
+                count: 0,
+                index: 0,
+                image: [{
+                    src: "/assets/musique_header.jpg"
+                },
+                {
+                    src: "/assets/chill_music.jpg"
+                }
+                ],
             }
+        },
+        mounted() {
+            setInterval( () => {
+                if (this.index < this.image.length - 1) {
+                    this.index++
+                } else {
+                    this.index = 0
+                }
+                this.count++
+            }, 8000);
         }
     }
 </script>
