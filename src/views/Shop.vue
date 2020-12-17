@@ -1,6 +1,6 @@
 <template>
     <!--zone html-->
-    <h1 class="w3-animate-left">Shop</h1>
+    <h1 class="w3-animate-left w3-padding-16 w3-center">Shop</h1>
     <Product />
 </template>
 

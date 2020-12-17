@@ -1,9 +1,10 @@
 <template>
     <nav>
         <ul>
-            <li class="w3-bar-item w3-button w3-padding-large"><router-link :to="{name: 'Home'}"><i class="fa fa-home"></i>Home</router-link></li>
-            <li class="w3-bar-item w3-button w3-padding-large"><router-link :to="{name: 'Shop'}">Shop</router-link></li>
-            <li class="w3-bar-item w3-button w3-padding-large"><router-link :to="{name: 'Contact'}">Contact</router-link></li>
+            <li class="w3-bar-item w3-button w3-padding-large"><router-link :to="{name: 'Home'}"><i class="fa fa-home"></i>Accueil</router-link></li>
+            <li class="w3-bar-item w3-button w3-padding-large"><router-link :to="{name: 'Shop'}">Boutique</router-link></li>
+            <li class="w3-bar-item w3-button w3-padding-large"><router-link :to="{name: 'AboutUs'}">A propos de nous</router-link></li>
+            <li class="w3-bar-item w3-button w3-padding-large"><router-link :to="{name: 'Contact'}">Nous contacter</router-link></li>
         </ul>
     </nav>
 

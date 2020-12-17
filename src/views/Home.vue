@@ -1,6 +1,6 @@
 <template>
     <!--zone html-->
-    <h1 class="w3-animate-left">Welcome to my Music shop</h1>
+    <h1 class="w3-animate-left w3-padding-16 w3-center">Welcome to my Music shop</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet commodi consequuntur officiis perferendis quo repellendus reprehenderit saepe sint veritatis! Animi commodi consequatur eligendi explicabo ipsum quidem quo quos reiciendis repellat.</p>
 
 </template>

@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <transition>
+        <transition name="fade">
             <img :src="image[index].src" alt="header">
         </transition>
         <div class="centered w3-border w3-display-center w3-text-white w3-padding-16" style="background-color:black">The place to be for your Vinyl</div>
@@ -31,7 +31,7 @@
                     this.index = 0
                 }
                 this.count++
-            }, 8000);
+            }, 4000);
         }
     }
 </script>
@@ -51,8 +51,11 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    h1 {
-        color: red;
+    .fade-enter-active, .fade-leave-active {
+        transition: opacity 0.25s ease-out;
+    }
+    .fade-enter, .fade-leave-to {
+        opacity: 0;
     }
 
 </style>
