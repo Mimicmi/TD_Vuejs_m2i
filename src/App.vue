@@ -1,9 +1,9 @@
 <template>
     <nav>
         <ul>
-            <li class="w3-bar-item w3-button w3-padding-large"><router-link to="/"><i class="fa fa-home"></i>Home</router-link></li>
-            <li class="w3-bar-item w3-button w3-padding-large"><router-link to="/shop">Shop</router-link></li>
-            <li class="w3-bar-item w3-button w3-padding-large"><router-link to="/contact">Contact</router-link></li>
+            <li class="w3-bar-item w3-button w3-padding-large"><router-link :to="{name: 'Home'}"><i class="fa fa-home"></i>Home</router-link></li>
+            <li class="w3-bar-item w3-button w3-padding-large"><router-link :to="{name: 'Shop'}">Shop</router-link></li>
+            <li class="w3-bar-item w3-button w3-padding-large"><router-link :to="{name: 'Contact'}">Contact</router-link></li>
         </ul>
     </nav>
 
