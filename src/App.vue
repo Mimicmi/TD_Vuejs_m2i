@@ -7,7 +7,9 @@
         </ul>
     </nav>
 
-    <Header/>
+    <Header>
+        <!--Mettre des slots pour chaque view-->
+    </Header>
 
     <div class="w3-container">
         <router-view />

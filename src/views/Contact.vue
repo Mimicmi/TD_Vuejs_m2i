@@ -1,12 +1,12 @@
 <template>
-    <!--zone html-->
-    <h1 class="w3-animate-left">Contact</h1>
-    <p>Insérer formulaire ici</p>
+    <Form/>
 </template>
 
 <script>
+    import Form from "../components/Form";
     export default {
         name: 'Contact',
+        components: {Form},
         data() {
             return {
                 title: "Test Contact title",
@@ -22,6 +22,5 @@
 </script>
 
 <style scoped>
-    /*zone css, le scoped mets le css QUE pour ce composant*/
 
 </style>
