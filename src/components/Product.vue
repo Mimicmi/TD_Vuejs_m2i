@@ -1,5 +1,4 @@
 <template>
-    <div>COMPONENT PRODUCT WORKING</div>
     <div class="w3-container w3-center">
         <div class="w3-row-padding">
             <div class="w3-col l4 m6 w3-padding">
@@ -25,21 +24,21 @@
             return {
                 products: [
                     {
-                        name: "Baby Yoda",
-                        price: 10,
-                        image: "assets/baby_yoda.jpeg",
+                        name: "Amani Picci - Keeper",
+                        price: 9,
+                        image: require("../assets/pochette1.jpeg"),
                         stock: 1
                     },
                     {
-                        name: "Sabre laser",
+                        name: "The Weeknd - Starboy",
                         price: 25,
-                        image: "assets/sabre_laser.jpeg",
+                        image: require("../assets/pochette2.jpeg"),
                         stock: 5
                     },
                     {
-                        name: "Blaster",
+                        name: "Vitalic - Voyager",
                         price: 15,
-                        image: "assets/blaster.jpeg",
+                        image: require("../assets/pochette3.jpeg"),
                         stock: 8
                     },
                 ],

@@ -15,10 +15,10 @@
                 count: 0,
                 index: 0,
                 image: [{
-                    src: "/assets/musique_header.jpg"
+                    src: require("../assets/musique_header.jpg")
                 },
                 {
-                    src: "/assets/chill_music.jpg"
+                    src: require("../assets/chill_music.jpg")
                 }
                 ],
             }
